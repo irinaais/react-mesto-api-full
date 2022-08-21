@@ -1,0 +1,21 @@
+.registration__input {
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    min-height: 30px;
+    background-color: black;
+}
+
+.registration__input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}

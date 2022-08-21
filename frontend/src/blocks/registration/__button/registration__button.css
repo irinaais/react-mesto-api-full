@@ -1,0 +1,15 @@
+.registration__button {
+    width: 358px;
+    height: 50px;
+    left: 461px;
+    top: 438px;
+    background: white;
+    border-radius: 2px;
+    margin-top: 186px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: black;
+    border: none;
+}

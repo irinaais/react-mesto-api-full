@@ -1,0 +1,10 @@
+.header__container_button {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    line-height: 22px;
+    border: none;
+    margin-top: -12px;
+    margin-left: 24px;
+    padding: 0;
+}

@@ -1,0 +1,18 @@
+.button_variant_edit {
+  border: 1px solid #ffffff;
+  background-image: url(../../../../images/pen.svg);
+  width: 24px;
+  height: 24px;
+  background-size: 10px;
+  margin-top: 13px;
+  margin-left: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .button_variant_edit {
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+  }
+}

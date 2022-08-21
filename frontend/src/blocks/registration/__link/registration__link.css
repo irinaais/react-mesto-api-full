@@ -1,0 +1,11 @@
+.registration__link {
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    line-height: 17px;
+    text-decoration: none;
+}
+
+.registration__link:hover {
+    opacity: 0.7;
+}

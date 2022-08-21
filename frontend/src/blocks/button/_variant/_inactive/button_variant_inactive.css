@@ -1,0 +1,9 @@
+.button_variant_inactive {
+    background: white;
+    color: #e5e5e5;
+    border: #e5e5e5 1px solid;
+}
+
+.button_variant_inactive:hover {
+    cursor: default;
+}

@@ -1,0 +1,21 @@
+.button_variant_avatar {
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 36px;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border: none;
+    transition: .2s;
+}
+
+.button_variant_avatar:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .4);
+    background-image: url('../../../../images/pen.svg');
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
