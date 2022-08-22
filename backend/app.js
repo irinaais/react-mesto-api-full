@@ -31,6 +31,13 @@ app.use(cookieParser());
 
 app.use(requestLogger);
 
+// удалить после успешного прохождения ревью
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
+
 app.post('/signup', registerValidator, createUser);
 app.post('/signin', authValidator, login);
 
