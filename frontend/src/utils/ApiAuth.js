@@ -1,4 +1,5 @@
-export const BASE_URL = 'https://api.mesto.irinaosipova.nomoredomains.sbs';
+export const BASE_URL = 'https://api.mesto.irinaosipova.nomoredomains.sbs'; //удаленный бекенд
+// export const BASE_URL = 'http://localhost:3000'; //локальный бэкенд
 
 function checkResponse(res) {
   if (res.ok) {
