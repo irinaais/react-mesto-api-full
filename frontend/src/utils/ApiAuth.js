@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.mesto.irinaosipova.nomoredomains.sbs/';
+export const BASE_URL = 'https://api.mesto.irinaosipova.nomoredomains.sbs';
 
 function checkResponse(res) {
   if (res.ok) {
