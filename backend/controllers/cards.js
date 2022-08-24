@@ -9,7 +9,7 @@ module.exports.sendCards = (req, res, next) => {
       if (!cards) {
         throw new NotFoundError('Карточки пока не созданы');
       }
-      return res.send({ data: cards });
+      return res.send(cards);
     })
     .catch((err) => next(err));
 };
