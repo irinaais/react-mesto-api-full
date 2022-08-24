@@ -11,17 +11,23 @@ class Api {
     return Promise.reject(`Ошибка: ${res.status}`);
   }
 
+  _getAuthHeader() {
+    const token = localStorage.getItem('token');
+    return { Authorization: `Bearer ${token}`, ...this._headers };
+  }
+
   getUserInfo() {
     return fetch(this._url + '/users/me', {
       method: 'GET',
-      headers: this._headers
+      headers: this._getAuthHeader()
     })
       .then(this._checkResponse);
   }
+
   getInitialCards() {
     return fetch(this._url + '/cards', {
       method: 'GET',
-      headers: this._headers
+      headers: this._getAuthHeader()
     })
       .then(this._checkResponse);
   }
@@ -29,7 +35,7 @@ class Api {
   saveUserInfo(userData) {
     return fetch(this._url + '/users/me', {
       method: 'PATCH',
-      headers: this._headers,
+      headers: this._getAuthHeader(),
       body: JSON.stringify({
         name: userData.name,
         about: userData.about
@@ -41,7 +47,7 @@ class Api {
   addCard(data) {
     return fetch(this._url + '/cards', {
       method: 'POST',
-      headers: this._headers,
+      headers: this._getAuthHeader(),
       body: JSON.stringify(data)
     })
       .then(this._checkResponse);
@@ -50,7 +56,7 @@ class Api {
   deleteCard(cardId) {
     return fetch(this._url + `/cards/${cardId}`, {
       method: 'DELETE',
-      headers: this._headers
+      headers: this._getAuthHeader()
     })
       .then(this._checkResponse);
   }
@@ -58,7 +64,7 @@ class Api {
   likeCard(cardId) {
     return fetch(this._url + `/cards/${cardId}/likes`, {
       method: 'PUT',
-      headers: this._headers
+      headers: this._getAuthHeader()
     })
       .then(this._checkResponse);
   }
@@ -66,7 +72,7 @@ class Api {
   deleteLikeCard(cardId) {
     return fetch(this._url + `/cards/${cardId}/likes`, {
       method: 'DELETE',
-      headers: this._headers
+      headers: this._getAuthHeader()
     })
       .then(this._checkResponse);
   }
@@ -74,7 +80,7 @@ class Api {
   editAvatar(userData) {
     return fetch(this._url + '/users/me/avatar', {
       method: 'PATCH',
-      headers: this._headers,
+      headers: this._getAuthHeader(),
       body: JSON.stringify({
         avatar: userData.avatar
       })
@@ -96,9 +102,10 @@ class Api {
 }
 
 const api = new Api({
-  url: 'https://mesto.nomoreparties.co/v1/cohort-41',
+  // url: 'https://mesto.nomoreparties.co/v1/cohort-41',
+  // url: 'https://api.mesto.irinaosipova.nomoredomains.sbs', // удаленный бэкенд
+  url: 'http://localhost:3000', // локальный бэкенд
   headers: {
-    authorization: 'd88185d7-a57f-426c-977a-fbfd58d99413',
     "Content-Type": "application/json"
   }
 });
