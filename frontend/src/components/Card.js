@@ -3,8 +3,8 @@ import {CurrentUserContext} from '../contexts/CurrentUserContext';
 
 function Card(props) {
   const currentUser = useContext(CurrentUserContext);
-  console.log('currentUser._id===', currentUser._id);
-  console.log('props.card =====', props.card);
+  // console.log('currentUser._id===', currentUser._id);
+  // console.log('props.card =====', props.card);
   console.log('props.card.owner ===', props.card.owner);
   console.log('props.card.likes ===', props.card.likes);
   const isOwn = props.card.owner === currentUser._id; //являемся ли мы владельцем текущей карточки
