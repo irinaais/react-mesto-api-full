@@ -38,7 +38,7 @@ function App() {
       Api.getUserInfoAndInitialCards()
         .then(([cards, userInfo]) => {
           setCards(cards);
-          setCurrentUser(userInfo);
+          setCurrentUser(userInfo.data);
         })
         .catch(err => console.log(err));
     }
@@ -162,7 +162,7 @@ function App() {
   function handleUpdateUser(userData) {
     Api.saveUserInfo(userData)
       .then((res) => {
-        setCurrentUser(res);
+        setCurrentUser(res.data);
         closeAllPopups();
       })
       .catch(err => console.log(err));
@@ -171,7 +171,7 @@ function App() {
   function handleUpdateAvatar(userData) {
     Api.editAvatar(userData)
       .then((res) => {
-        setCurrentUser(res);
+        setCurrentUser(res.data);
         closeAllPopups();
       })
       .catch(err => console.log(err));
