@@ -22,7 +22,7 @@ module.exports.createCard = (req, res, next) => {
       if (!card) {
         throw new NotFoundError('Указанная карточка не найдена');
       }
-      return res.send({ data: card });
+      return res.send(card);
     })
     .catch((err) => {
       if (err.name === 'ValidationError') {
