@@ -103,8 +103,8 @@ class Api {
 
 const api = new Api({
   // url: 'https://mesto.nomoreparties.co/v1/cohort-41',
-  // url: 'https://api.mesto.irinaosipova.nomoredomains.sbs', // удаленный бэкенд
-  url: 'http://localhost:3000', // локальный бэкенд
+  url: 'https://api.mesto.irinaosipova.nomoredomains.sbs', // удаленный бэкенд
+  // url: 'http://localhost:3000', // локальный бэкенд
   headers: {
     "Content-Type": "application/json"
   }
