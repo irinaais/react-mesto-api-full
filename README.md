@@ -1,4 +1,4 @@
-# Mesto
+# Mesto — React Version
 Проект Mesto - фронтенд на React.js и бэкенд на Node.js (Express). Прототип социальной сети для публикации фотографий.
 Выполнен в рамках 15-й проектной работы в Яндекс.Практикуме. Использовала: `React.js`, `JavaScript`,`CSS`, `HTML`, `БЭМ (Nested)`,
 `Async\await`,`Flexbox`, `Grid Layout`, `Адаптивная верстка`,`REST API`, `Create-react-app`, 
