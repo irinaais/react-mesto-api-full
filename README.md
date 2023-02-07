@@ -31,4 +31,4 @@
 
 Ссылка на backend - http://api.mesto.irinaosipova.nomoredomains.sbs/
 
-Публичный IP-адрес сервера - 84.201.139.124
+Публичный IP-адрес сервера - 37.220.83.8

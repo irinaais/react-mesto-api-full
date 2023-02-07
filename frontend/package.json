@@ -17,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && scp -r ./build/* irinaais90@51.250.24.224:/home/irinaais90/mesto-frontend",
-    "delete files & deploy": "npm run build && ssh irinaais90@51.250.24.224 rm -r mesto-frontend/* && scp -r ./build/* irinaais90@51.250.24.224:/home/irinaais90/mesto-frontend"
+    "deploy": "npm run build && scp -r ./build/* irinaais90@37.220.83.8:/home/irinaais90/mesto-frontend",
+    "delete files & deploy": "npm run build && ssh irinaais90@37.220.83.8 rm -r mesto-frontend/* && scp -r ./build/* irinaais90@37.220.83.8:/home/irinaais90/mesto-frontend"
   },
   "eslintConfig": {
     "extends": [
